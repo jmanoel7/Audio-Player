@@ -65,6 +65,16 @@ Execute:
 
 Para obter mais ajuda sobre o Angular CLI, use `ng help` ou confira o [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
 
+## ATENÇÃO
+
+- Já foi adicionado o código para desenvolvimento pwa: `ng add @angular/pwa --project music-list`
+- Também já foram adicionados os códigos para desenvolvimento do iOS e do Android:
+  - `npm install @capacitor/ios @capacitor/android`
+  - `npx cap add ios`
+  - `npx cap add android`
+
+**OBS:** esses comandos **não** precisam ser repetidos
+
 ## TODO
 
 - construção do aplicativo para iOS
