@@ -75,7 +75,59 @@ Para obter mais ajuda sobre o Angular CLI, use `ng help` ou confira o [Angular C
 
 **OBS:** esses comandos **não** precisam ser repetidos
 
+## Deploy versão PWA
+
+### Instalando o Apache no ArchLinux
+
+```sh
+sudo pacman -S apache
+```
+
+### Instalando e Configurando o Audio Player para rodar sobre o Apache
+
+```sh
+git clone https://github.com/jmanoel7/Audio-Player.git
+cd Audio-Player
+sudo mkdir -p /srv/http/
+sudo cp -af ./dist/music-list/ /srv/http/
+sudo chown http.http -R /srv/http/music-list/
+sudo mv /etc/httpd/conf/httpd.conf /etc/httpd/conf/httpd.conf.bak
+sudo cp httpd.conf /etc/httpd/conf/httpd.conf
+sudo systemctl restart httpd.service
+```
+
+## Deploy versão Android
+
+### Instalando e Configurando o Ambiente para desenvolvimentto com Android Studio
+
+Siga os passos que estão no seguinte link:
+
+[Ambiente Android Studio](https://capacitorjs.com/docs/getting-started/environment-setup#android-development)
+
+Depois, configure a váriável de ambiente `CAPACITOR_ANDROID_STUDIO_PATH` para onde está instalado o executável do Android Studio.
+
+Para sistemas GNU/Linux basta adicionar a seguinte linha no seu `~/.bashrc`:
+
+`export CAPACITOR_ANDROID_STUDIO_PATH="$HOME/.local/android-studio/bin/studio.sh"`
+
+**OBS:** sendo `$HOME/.local` o local onde você instalou o android studio, se for diferente, modifique-o de acordo com o seu local de instalação.
+
+### Abrindo o App no Android Studio
+
+Para abrir o projeto no Android Studio, execute o seguinte no terminal:
+
+```sh
+npx cap open android
+```
+
+### Executando o App no Android Studio
+
+Para executar o projeto no Android Studio, execute o seguinte no terminal:
+
+```sh
+npx cap run android
+```
+
 ## TODO
 
 - construção do aplicativo para iOS
-- construção do aplicativo para Android
