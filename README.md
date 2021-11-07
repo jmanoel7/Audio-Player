@@ -117,16 +117,22 @@ Para sistemas GNU/Linux basta adicionar a seguinte linha no seu `~/.bashrc`:
 Para abrir o projeto no Android Studio, execute o seguinte no terminal:
 
 ```sh
+cd /path/to/Audio-Player
 npx cap open android
 ```
+
+**OBS:** `/path/to` aponta para o diretório raíz da instalação do projeto Audio Player
 
 ### Executando o App no Android Studio
 
 Para executar o projeto no Android Studio, execute o seguinte no terminal:
 
 ```sh
+cd /path/to/Audio-Player
 npx cap run android
 ```
+
+**OBS:** `/path/to` aponta para o diretório raíz da instalação do projeto Audio Player
 
 ## TODO
 
