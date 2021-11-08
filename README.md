@@ -110,7 +110,7 @@ Para sistemas GNU/Linux basta adicionar a seguinte linha no seu `~/.bashrc`:
 
 `export CAPACITOR_ANDROID_STUDIO_PATH="$HOME/.local/android-studio/bin/studio.sh"`
 
-**OBS:** sendo `$HOME/.local` o local onde você instalou o android studio, se for diferente, modifique-o de acordo com o seu local de instalação.
+**OBS:** sendo `$HOME/.local` o local onde você instalou o android studio, se no seu caso for diferente, modifique-o de acordo com o seu local de instalação.
 
 ### Abrindo o App no Android Studio
 
@@ -123,7 +123,15 @@ npx cap open android
 
 **OBS:** `/path/to` aponta para o diretório raíz da instalação do projeto Audio Player
 
-### Executando o App no Android Studio
+### Executando o App via Android Sdk
+
+Antes de executar o projeto, temos que configurar a váriavel de ambiente `ANDROID_SDK_ROOT`
+
+Em sistemas GNU/Linux, basta adicionar a seguinte linha ao seu arquivo `~/.bashrc`:
+
+`export ANDROID_SDK_ROOT="$HOME/Android/Sdk"`
+
+**OBS:** no exemplo acima consta que o `Android Sdk` está instalado em `"$HOME/Android/Sdk"`, se no seu caso for diferente, modifique-o de acordo com o seu local de instalação.
 
 Para executar o projeto no Android Studio, execute o seguinte no terminal:
 
