@@ -133,7 +133,7 @@ Em sistemas GNU/Linux, basta adicionar a seguinte linha ao seu arquivo `~/.bashr
 
 **OBS:** no exemplo acima consta que o `Android Sdk` está instalado em `"$HOME/Android/Sdk"`, se no seu caso for diferente, modifique-o de acordo com o seu local de instalação.
 
-Para executar o projeto no Android Studio, execute o seguinte no terminal:
+Para executar o projeto via Android Sdk, execute o seguinte no terminal:
 
 ```sh
 cd /path/to/Audio-Player
