@@ -83,7 +83,7 @@ Para obter mais ajuda sobre o Angular CLI, use `ng help` ou confira o [Angular C
 sudo pacman -S apache
 ```
 
-### Instalando e Configurando o App Audio Player para rodar sobre o Apache no ArchLinux
+### Instalando e Configurando o App Audio Player como PWA para rodar sobre o Apache no ArchLinux
 
 ```sh
 git clone https://github.com/jmanoel7/Audio-Player.git
