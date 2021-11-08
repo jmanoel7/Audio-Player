@@ -96,6 +96,8 @@ sudo cp httpd.conf /etc/httpd/conf/httpd.conf
 sudo systemctl restart httpd.service
 ```
 
+Agora inicie o navegador web de sua preferência - [google chrome](https://www.google.com/intl/pt-BR/chrome/) ou [mozilla firefox](https://www.mozilla.org/pt-BR/firefox/all/#product-desktop-release) - para acessar `http://aguia:8080/music-list/` e desfrutar do App Audio Player como PWA.
+
 ## Deploy versão Android
 
 ### Instalando e Configurando o Ambiente para desenvolvimentto com Android Studio
