@@ -83,7 +83,7 @@ Para obter mais ajuda sobre o Angular CLI, use `ng help` ou confira o [Angular C
 sudo pacman -S apache
 ```
 
-### Instalando e Configurando o Audio Player para rodar sobre o Apache no ArchLinux
+### Instalando e Configurando o App Audio Player para rodar sobre o Apache no ArchLinux
 
 ```sh
 git clone https://github.com/jmanoel7/Audio-Player.git
@@ -96,7 +96,9 @@ sudo cp httpd.conf /etc/httpd/conf/httpd.conf
 sudo systemctl restart httpd.service
 ```
 
-Agora inicie o navegador web de sua preferência - [google chrome](https://www.google.com/intl/pt-BR/chrome/) ou [mozilla firefox](https://www.mozilla.org/pt-BR/firefox/all/#product-desktop-release) - para acessar `http://aguia:8080/music-list/` e desfrutar do App Audio Player como PWA.
+### Executando o App Audio Player como PWA sobre o Apache no ArchLinux
+
+Agora inicie o navegador web de sua preferência - [google chrome](https://www.google.com/intl/pt-BR/chrome/) ou [mozilla firefox](https://www.mozilla.org/pt-BR/firefox/new/) - para acessar `http://aguia:8080/music-list/` e desfrutar do App Audio Player como PWA.
 
 ## Deploy versão Android
 
